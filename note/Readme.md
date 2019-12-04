@@ -44,3 +44,23 @@ structureExample.b = 1;
 ```c
 struct MyStructure structureExample[10];
 ```
+
+
+### Pointer (* => value, & => address)
+the benefit of pointer: accesing heap, accesing devices, and 
+- example:
+```c
+int main()
+{ 
+    int a = 10: // assume a is save at addres: 200
+    int *p;
+    p = &a;
+
+    // so here a = 10
+    // a saved at address: 200
+    // p is the address of a (&)
+    // so *p is 10
+};
+```
+
+
