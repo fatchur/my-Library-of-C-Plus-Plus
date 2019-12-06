@@ -52,7 +52,7 @@ the benefit of pointer: accesing heap, accesing devices, and
 ```c
 int main()
 { 
-    int a = 10: // assume a is save at addres: 200
+    int a = 10: // assume a is saved at addres: 200
     int *p;
     p = &a;
 
@@ -61,6 +61,18 @@ int main()
     // p is the address of a (&)
     // so *p is 10
 };
+```
+- CASE NOTE:
+```c
+int *p = 10:
+printf("%d", *p)
+// this will result in core dump error
+// REASON:
+// the code above is SAME with
+int *p;
+p = 10;
+
+// so we just declare the address without a value.
 ```
 
 
